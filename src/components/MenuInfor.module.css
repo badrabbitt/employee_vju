@@ -36,7 +36,6 @@
   justify-content: flex-start;
 }
 .informationWrapper {
-  flex: 1;
   flex-direction: column;
   padding: 2.1px 0 0;
 }
@@ -72,6 +71,7 @@
   box-sizing: border-box;
   max-width: 100%;
   gap: 20px;
+  z-index: 1;
 }
 @media screen and (max-width: 1625px) {
   .menuInfor {
@@ -80,6 +80,9 @@
   }
 }
 @media screen and (max-width: 1275px) {
+  .information {
+    font-size: 18px;
+  }
   .menuInfor {
     padding-left: 21px;
     box-sizing: border-box;
@@ -89,10 +92,5 @@
   .menuInfor {
     padding-left: 21px;
     box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 450px) {
-  .information {
-    font-size: 18px;
   }
 }

@@ -5,66 +5,49 @@ const FrameComponent = ({ className = "" }) => {
   return (
     <div className={[styles.frameParent, className].join(" ")}>
       <div className={styles.frameWrapper}>
-        <button className={styles.frameGroup} id="button_grades">
-          <div className={styles.vectorWrapper}>
-            <img
-              className={styles.vectorIcon}
-              loading="lazy"
-              alt=""
-              src="/vector.svg"
-            />
-          </div>
-          <div className={styles.grades}>Grades</div>
+        <button className={styles.gridParent} id="button_class">
+          <img
+            className={styles.gridIcon}
+            loading="lazy"
+            alt=""
+            src="/grid.svg"
+          />
+          <div className={styles.dashboard}>Dashboard</div>
         </button>
       </div>
-      <div className={styles.downloadsHeaderParent}>
-        <div className={styles.downloadsHeader}>
-          <button className={styles.downloadsIcon} id="button_downloads">
-            <div className={styles.downloadButton}>
-              <img
-                className={styles.cloudarrowdownIcon}
-                loading="lazy"
-                alt=""
-                src="/cloudarrowdown.svg"
-              />
-            </div>
-            <div className={styles.downloads}>Downloads</div>
-          </button>
-        </div>
-        <div className={styles.settingsParent}>
-          <button className={styles.settings} id="button_settings">
-            <div className={styles.settingsChild} />
-            <div className={styles.settingsIcon}>
-              <img className={styles.gearIcon} alt="" src="/gear.svg" />
-            </div>
-            <div className={styles.settings1}>Settings</div>
-          </button>
-          <div className={styles.trashHeaderWrapper}>
-            <button className={styles.trashHeader} id="button_trash">
-              <div className={styles.trashIcon}>
-                <img
-                  className={styles.trashIcon1}
-                  loading="lazy"
-                  alt=""
-                  src="/trash.svg"
-                />
-              </div>
-              <div className={styles.trash}>Trash</div>
-            </button>
-          </div>
-        </div>
-      </div>
       <div className={styles.frameContainer}>
-        <button className={styles.frameButton} id="button_logout">
-          <div className={styles.boxarrowrightWrapper}>
+        <button className={styles.frameGroup} id="button_user">
+          <div className={styles.archiveWrapper}>
             <img
-              className={styles.boxarrowrightIcon}
+              className={styles.archiveIcon}
               loading="lazy"
               alt=""
-              src="/boxarrowright.svg"
+              src="/archive.svg"
             />
           </div>
-          <div className={styles.logOut}>Log Out</div>
+          <div className={styles.classes}>Classes</div>
+        </button>
+      </div>
+      <button className={styles.peopleParent} id="button_schedule">
+        <img
+          className={styles.peopleIcon}
+          loading="lazy"
+          alt=""
+          src="/people.svg"
+        />
+        <div className={styles.userManagement}>User Management</div>
+      </button>
+      <div className={styles.frameDiv}>
+        <button className={styles.frameButton} id="button_grades">
+          <div className={styles.calendar2weekWrapper}>
+            <img
+              className={styles.calendar2weekIcon}
+              loading="lazy"
+              alt=""
+              src="/calendar2week.svg"
+            />
+          </div>
+          <div className={styles.schedule}>Schedule</div>
         </button>
       </div>
     </div>

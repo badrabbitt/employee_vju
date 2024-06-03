@@ -8,7 +8,7 @@ const MenuChangePassword = ({ className = "" }) => {
       id="button_change_password"
     >
       <div className={styles.changePasswordFrame} />
-      <div className={styles.menuItems}>
+      <div className={styles.footerItemPair}>
         <img
           className={styles.iconGroup}
           loading="lazy"
