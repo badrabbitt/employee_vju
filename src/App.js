@@ -6,8 +6,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import Login from "./pages/Login";
-import OTP from "./pages/OTP";
 import ForgotPassword from "./pages/ForgotPassword";
+import OTP from "./pages/OTP";
 
 function App() {
   const action = useNavigationType();
@@ -29,11 +29,11 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/otp":
+      case "/forgot-password":
         title = "";
         metaDescription = "";
         break;
-      case "/forgot-password":
+      case "/otp":
         title = "";
         metaDescription = "";
         break;
@@ -56,8 +56,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/otp" element={<OTP />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="/otp" element={<OTP />} />
     </Routes>
   );
 }

@@ -55,7 +55,7 @@ const OTP = () => {
                       />
                     </div>
                     <div className={styles.resent}>
-                      <b className={styles.resentOtp}>Resent OTP</b>
+                      <button className={styles.resentOtp}>Resent OTP</button>
                     </div>
                   </div>
                 </div>
