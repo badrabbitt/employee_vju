@@ -8,11 +8,21 @@ const MenuChangePassword = ({ className = "" }) => {
       id="button_change_password"
     >
       <div className={styles.changePasswordFrame} />
-      <div className={styles.menuItemContainers}>
-        <img className={styles.iconGroup} alt="" src="/icon-group.svg" />
+      <div className={styles.menuItems}>
+        <img
+          className={styles.iconGroup}
+          loading="lazy"
+          alt=""
+          src="/icon-group.svg"
+        />
         <div className={styles.changePassword}>Change Password</div>
       </div>
-      <img className={styles.backwardIcon} alt="" src="/backward@2x.png" />
+      <img
+        className={styles.backwardIcon}
+        loading="lazy"
+        alt=""
+        src="/backward@2x.png"
+      />
     </button>
   );
 };

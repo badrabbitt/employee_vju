@@ -7,34 +7,38 @@
   display: none;
   max-width: 100%;
 }
-.groupIcon {
-  height: 38.9px;
-  width: 34.7px;
+.groupIcon,
+.information {
   position: relative;
   flex-shrink: 0;
   debug_commit: bf4bc93;
   z-index: 1;
 }
-.frameChild,
-.groupParent {
+.groupIcon {
+  height: 38.9px;
+  width: 34.7px;
+}
+.information {
+  align-self: stretch;
+  height: 31px;
+  font-size: 22px;
+  font-family: Inter;
+  color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.groupParent,
+.informationWrapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frameChild {
-  width: calc(100% - 50.7px);
-  border: 0;
-  outline: 0;
-  background-color: transparent;
-  height: 33.1px;
+.informationWrapper {
   flex: 1;
   flex-direction: column;
   padding: 2.1px 0 0;
-  box-sizing: border-box;
-  font-family: Inter;
-  font-size: 22px;
-  color: #000;
-  min-width: 76px;
 }
 .groupParent {
   width: 201.3px;
@@ -69,9 +73,26 @@
   max-width: 100%;
   gap: 20px;
 }
+@media screen and (max-width: 1625px) {
+  .menuInfor {
+    padding-left: 21px;
+    box-sizing: border-box;
+  }
+}
 @media screen and (max-width: 1275px) {
   .menuInfor {
     padding-left: 21px;
     box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .menuInfor {
+    padding-left: 21px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .information {
+    font-size: 18px;
   }
 }

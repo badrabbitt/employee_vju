@@ -1,10 +1,21 @@
+.sidebarBackground {
+  width: 385px;
+  height: 1024px;
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  display: none;
+  max-width: 100%;
+}
 .maskGroupIcon {
   height: 100px;
   width: 100px;
   position: relative;
   object-fit: cover;
+  z-index: 1;
 }
-.maskGroupWrapper {
+.userStatus {
+  align-self: stretch;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -14,169 +25,177 @@
 .admin,
 .nguyenThaiSon {
   position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.nguyenThaiSon {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: 18px;
   font-weight: 500;
+  font-family: Poppins;
+  color: #000;
+  text-align: center;
 }
 .admin {
+  text-decoration: none;
   font-weight: 300;
-  display: inline-block;
+  color: inherit;
   min-width: 52px;
 }
-.userType {
+.userName,
+.userRole {
+  justify-content: flex-start;
+}
+.userRole {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
   padding: 0 51px 0 50px;
-  font-size: 16px;
-  color: #7a7e86;
 }
-.userProfile {
+.userName {
+  align-self: stretch;
   flex-direction: column;
   gap: 4px;
 }
-.frameParent,
-.sidebar,
-.sidebarInner,
-.userProfile {
+.actions,
+.user,
+.userImage,
+.userName {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
 }
-.frameParent {
+.userImage {
+  flex: 1;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 12px;
 }
-.sidebar,
-.sidebarInner {
+.actions,
+.user {
+  align-self: stretch;
   flex-direction: row;
-  padding: 0 40px;
+  justify-content: flex-end;
+  padding: 0 40px 40px;
+}
+.actions {
+  padding: 0 1px 0 0;
 }
 .sidebar {
-  align-self: stretch;
+  width: 385px;
   border-radius: 30px;
   background-color: #fff;
-  overflow: hidden;
-  flex-direction: column;
-  padding: 50px 60px 217px;
-  gap: 83px;
-}
-.sidebarWrapper {
-  width: 421px;
-  padding: 0 36px 0 0;
-  box-sizing: border-box;
-}
-.bottomBar,
-.bottomLeftMenu,
-.sidebarWrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: flex-start;
+  padding: 50px 92px 217px 60px;
+  box-sizing: border-box;
+  gap: 43px;
+  min-width: 385px;
   max-width: 100%;
 }
-.bottomLeftMenu {
-  align-self: stretch;
-  gap: 47.4px;
-}
-.bottomBar {
-  width: 1041px;
-  padding: 100px 0 0;
-  box-sizing: border-box;
-}
-.notification11,
-.notification111 {
-  cursor: pointer;
-  border: 0;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  background-image: url(/public/notification-1-1@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.notification11 {
-  padding: 0;
-  width: 46px;
-  height: 40px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.notificationArea {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 10px 29px 0 0;
-}
-.message1 {
-  width: 47px;
-  height: 35px;
-  position: relative;
-  background-image: url(/public/message-1@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.messageArea,
+.footer,
+.menuContent,
 .settings {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 11px 0 0;
+}
+.menuContent {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 47.4px;
+  max-width: 100%;
+}
+.footer,
+.settings {
+  box-sizing: border-box;
+}
+.footer {
+  width: 1041px;
+  flex-direction: column;
+  padding: 100px 0 0;
+  min-width: 1041px;
+  max-width: 100%;
 }
 .settings {
   width: 100%;
   position: relative;
   background-color: #e8f1f2;
   flex-direction: row;
-  padding: 51px 35px 42px;
-  box-sizing: border-box;
-  gap: 15px;
-  line-height: normal;
+  flex-wrap: wrap;
+  padding: 47px 51px 46px;
+  gap: 51px;
   letter-spacing: normal;
+  line-height: normal;
   text-align: center;
-  font-size: 18px;
-  color: #000;
+  font-size: 16px;
+  color: #7a7e86;
   font-family: Poppins;
 }
 @media screen and (max-width: 1625px) {
-  .settings {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 1275px) {
   .sidebar {
     padding-top: 32px;
     padding-bottom: 141px;
     box-sizing: border-box;
   }
+  .footer {
+    min-width: 100%;
+  }
+  .settings {
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+  }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
+  .footer,
+  .sidebar {
+    flex: 1;
+  }
+  .settings {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1275px) {
   .sidebar {
     padding-top: 21px;
     padding-bottom: 92px;
     box-sizing: border-box;
+    min-width: 100%;
   }
-  .bottomLeftMenu {
+  .menuContent {
     gap: 24px;
+  }
+  .settings {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .settings {
+    padding-left: 235px;
+    padding-right: 32px;
+    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 450px) {
-  .bottomBar,
   .sidebar {
-    box-sizing: border-box;
-  }
-  .sidebar {
-    gap: 41px;
+    gap: 21px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .bottomBar {
+  .footer,
+  .settings,
+  .sidebar {
+    box-sizing: border-box;
+  }
+  .footer {
     padding-top: 65px;
+  }
+  .settings {
+    padding-left: 20px;
   }
 }

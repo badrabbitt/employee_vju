@@ -1,0 +1,234 @@
+.vectorIcon {
+  width: 25px;
+  height: 21.9px;
+  position: relative;
+  z-index: 1;
+}
+.vectorWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2.6px 0 0;
+}
+.grades {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 66px;
+  z-index: 1;
+}
+.frameGroup,
+.frameWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameGroup {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  gap: 22px;
+}
+.frameWrapper {
+  padding: 0 19px;
+}
+.cloudarrowdownIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.downloadButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0 0;
+}
+.downloads {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 101px;
+  z-index: 1;
+}
+.downloadsHeader,
+.downloadsIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.downloadsIcon {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  gap: 19px;
+}
+.downloadsHeader {
+  padding: 0 20px;
+}
+.settingsChild {
+  height: 60px;
+  width: 232px;
+  position: relative;
+  border-radius: 18px;
+  background-color: #1294f2;
+  display: none;
+}
+.gearIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.settingsIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0 0;
+}
+.settings1 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  min-width: 74px;
+  z-index: 1;
+}
+.settings {
+  cursor: pointer;
+  border: 0;
+  padding: 15px 20px 18px;
+  background-color: #1294f2;
+  align-self: stretch;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 22px;
+  z-index: 1;
+}
+.trashIcon1 {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.trashIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1px 0 0;
+}
+.trash {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 50px;
+  z-index: 1;
+}
+.trashHeader {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex-direction: row;
+  gap: 18px;
+}
+.downloadsHeaderParent,
+.settingsParent,
+.trashHeader,
+.trashHeaderWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.trashHeaderWrapper {
+  flex-direction: row;
+  padding: 0 20px;
+}
+.downloadsHeaderParent,
+.settingsParent {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 15px;
+}
+.downloadsHeaderParent {
+  padding: 0 0 10px;
+  gap: 18px;
+}
+.boxarrowrightIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.boxarrowrightWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1px 0 0;
+}
+.logOut {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 69px;
+  z-index: 1;
+}
+.frameButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex-direction: row;
+  gap: 19px;
+}
+.frameButton,
+.frameContainer,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameContainer {
+  flex-direction: row;
+  padding: 0 22px;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 23px;
+}
