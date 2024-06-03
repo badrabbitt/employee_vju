@@ -21,14 +21,11 @@
   display: inline-block;
   min-width: 52px;
 }
-.userProfile,
 .userType {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.userType {
-  flex-direction: row;
   padding: 0 51px 0 50px;
   font-size: 16px;
   color: #7a7e86;
@@ -37,31 +34,29 @@
   flex-direction: column;
   gap: 4px;
 }
-.frameParent {
-  flex-direction: column;
-  gap: 12px;
-}
 .frameParent,
 .sidebar,
 .sidebarInner,
-.sidebarWrapper {
+.userProfile {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
+.frameParent {
+  flex-direction: column;
+  gap: 12px;
+}
+.sidebar,
 .sidebarInner {
   flex-direction: row;
   padding: 0 40px;
-}
-.sidebar,
-.sidebarWrapper {
-  flex-direction: column;
 }
 .sidebar {
   align-self: stretch;
   border-radius: 30px;
   background-color: #fff;
   overflow: hidden;
+  flex-direction: column;
   padding: 50px 60px 217px;
   gap: 83px;
 }
@@ -69,71 +64,10 @@
   width: 421px;
   padding: 0 36px 0 0;
   box-sizing: border-box;
-  max-width: 100%;
-}
-.changePasswordFrame {
-  height: 149.6px;
-  width: 1041px;
-  position: relative;
-  border-radius: 20px;
-  background-color: #fff;
-  display: none;
-  max-width: 100%;
-}
-.changePassword,
-.iconGroup {
-  position: relative;
-  flex-shrink: 0;
-  debug_commit: bf4bc93;
-  z-index: 1;
-}
-.iconGroup {
-  height: 38.9px;
-  width: 34.7px;
-}
-.changePassword {
-  height: 27px;
-  flex: 1;
-  font-size: 22px;
-  font-family: Inter;
-  color: #000;
-  text-align: center;
-  display: inline-block;
-  min-width: 115px;
-  padding: 0;
-}
-.menuItemContainers {
-  width: 272px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: 45.3px;
-}
-.backwardIcon {
-  height: 29.9px;
-  width: 16px;
-  position: relative;
-  object-fit: contain;
-  z-index: 1;
-}
-.menuChangePassword {
-  cursor: pointer;
-  border: 0;
-  padding: 50px 27px 59.9px 50px;
-  background-color: #fff;
-  align-self: stretch;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-  box-sizing: border-box;
-  max-width: 100%;
-  gap: 20px;
 }
 .bottomBar,
-.bottomLeftMenu {
+.bottomLeftMenu,
+.sidebarWrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -198,7 +132,6 @@
   width: 100%;
   position: relative;
   background-color: #e8f1f2;
-  overflow: hidden;
   flex-direction: row;
   padding: 51px 35px 42px;
   box-sizing: border-box;
@@ -222,10 +155,6 @@
     padding-bottom: 141px;
     box-sizing: border-box;
   }
-  .menuChangePassword {
-    padding-left: 25px;
-    box-sizing: border-box;
-  }
 }
 @media screen and (max-width: 900px) {
   .sidebar {
@@ -238,20 +167,16 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .bottomBar,
+  .sidebar {
+    box-sizing: border-box;
+  }
   .sidebar {
     gap: 41px;
     padding-left: 20px;
     padding-right: 20px;
-    box-sizing: border-box;
-  }
-  .changePassword {
-    font-size: 18px;
-  }
-  .menuItemContainers {
-    gap: 23px;
   }
   .bottomBar {
     padding-top: 65px;
-    box-sizing: border-box;
   }
 }

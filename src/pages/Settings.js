@@ -1,4 +1,5 @@
 import Content from "../components/Content";
+import MenuChangePassword from "../components/MenuChangePassword";
 import MenuInfor from "../components/MenuInfor";
 import styles from "./Settings.module.css";
 
@@ -30,21 +31,7 @@ const Settings = () => {
       </div>
       <section className={styles.bottomBar}>
         <div className={styles.bottomLeftMenu}>
-          <button
-            className={styles.menuChangePassword}
-            id="button_change_password"
-          >
-            <div className={styles.changePasswordFrame} />
-            <div className={styles.menuItemContainers}>
-              <img className={styles.iconGroup} alt="" src="/icon-group.svg" />
-              <div className={styles.changePassword}>Change Password</div>
-            </div>
-            <img
-              className={styles.backwardIcon}
-              alt=""
-              src="/backward@2x.png"
-            />
-          </button>
+          <MenuChangePassword />
           <MenuInfor />
         </div>
       </section>
