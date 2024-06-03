@@ -8,6 +8,7 @@ import {
 import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
 import OTP from "./pages/OTP";
+import Settings from "./pages/Settings";
 
 function App() {
   const action = useNavigationType();
@@ -37,6 +38,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/settings":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -58,6 +63,7 @@ function App() {
       <Route path="/" element={<Login />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/otp" element={<OTP />} />
+      <Route path="/settings" element={<Settings />} />
     </Routes>
   );
 }

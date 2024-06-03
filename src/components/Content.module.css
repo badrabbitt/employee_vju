@@ -1,0 +1,378 @@
+.gridIcon {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.dashboard {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 101px;
+}
+.contentHeader,
+.contentHeaderInner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contentHeaderInner {
+  gap: 20px;
+}
+.contentHeader {
+  cursor: pointer;
+  border: 0;
+  padding: 0 20px;
+  background-color: transparent;
+  align-self: stretch;
+}
+.archiveIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.archiveWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1px 0 0;
+}
+.classes {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 70px;
+}
+.contentHeader1,
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  gap: 21px;
+}
+.contentHeader1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0 20px;
+  background-color: transparent;
+  align-self: stretch;
+}
+.peopleIcon {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.userManagement {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+}
+.contentHeader2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 22px;
+}
+.calendar2weekIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.calendar2weekWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1px 0 0;
+}
+.schedule {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 84px;
+}
+.contentHeader3,
+.frameGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameGroup {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  gap: 21px;
+}
+.contentHeader3 {
+  align-self: stretch;
+  padding: 0 20px;
+}
+.vectorIcon {
+  width: 25px;
+  height: 21.9px;
+  position: relative;
+}
+.vectorWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2.6px 0 0;
+}
+.grades {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 66px;
+}
+.contentHeader4,
+.frameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameContainer {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  gap: 22px;
+}
+.contentHeader4 {
+  align-self: stretch;
+  padding: 0 19px;
+}
+.cloudarrowdownIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.downloadIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0 0;
+}
+.downloads {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 101px;
+}
+.downloadIconParent,
+.footerActions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.downloadIconParent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  gap: 19px;
+}
+.footerActions {
+  padding: 0 20px;
+}
+.settingsChild {
+  height: 60px;
+  width: 232px;
+  position: relative;
+  border-radius: 18px;
+  background-color: #1294f2;
+  display: none;
+}
+.gearIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.gearWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0 0;
+}
+.settings1 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  min-width: 74px;
+  z-index: 1;
+}
+.settings {
+  cursor: pointer;
+  border: 0;
+  padding: 15px 20px 18px;
+  background-color: #1294f2;
+  align-self: stretch;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 22px;
+}
+.trashIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.trashWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1px 0 0;
+}
+.trash {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 50px;
+}
+.frameButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex-direction: row;
+  gap: 18px;
+}
+.contentFooterInner,
+.frameButton,
+.frameWrapper,
+.settingsParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  flex-direction: row;
+  padding: 0 20px;
+}
+.contentFooterInner,
+.settingsParent {
+  flex-direction: column;
+}
+.settingsParent {
+  align-self: stretch;
+  gap: 15px;
+}
+.contentFooterInner {
+  flex: 1;
+  gap: 18px;
+}
+.contentFooter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 1px 0 0;
+}
+.boxarrowrightIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.boxarrowrightWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1px 0 0;
+}
+.logOut {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #7a7e86;
+  text-align: left;
+  display: inline-block;
+  min-width: 69px;
+}
+.frameParent1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 19px;
+}
+.content,
+.contentHeader5,
+.frameParent1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.contentHeader5 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 22px;
+}
+.content {
+  width: 233px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 33px;
+}
