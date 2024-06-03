@@ -23,7 +23,7 @@ const Sidebar = ({ className = "" }) => {
                   src="/vector.svg"
                 />
               </div>
-              <div className={styles.grades}>Grades</div>
+              <a className={styles.grades}>Grades</a>
             </button>
           </div>
           <div className={styles.frameParent}>
@@ -37,7 +37,7 @@ const Sidebar = ({ className = "" }) => {
                     src="/cloudarrowdown.svg"
                   />
                 </div>
-                <div className={styles.downloads}>Downloads</div>
+                <a className={styles.downloads}>Downloads</a>
               </button>
             </div>
             <div className={styles.settingsParent}>
@@ -46,7 +46,7 @@ const Sidebar = ({ className = "" }) => {
                 <div className={styles.settingsButton}>
                   <img className={styles.gearIcon} alt="" src="/gear.svg" />
                 </div>
-                <div className={styles.settings1}>Settings</div>
+                <a className={styles.settings1}>Settings</a>
               </button>
               <div className={styles.downloadsHeader}>
                 <button className={styles.frameGroup} id="button_logout">
@@ -58,7 +58,7 @@ const Sidebar = ({ className = "" }) => {
                       src="/trash.svg"
                     />
                   </div>
-                  <div className={styles.trash}>Trash</div>
+                  <a className={styles.trash}>Trash</a>
                 </button>
               </div>
             </div>
@@ -73,7 +73,7 @@ const Sidebar = ({ className = "" }) => {
                   src="/boxarrowright.svg"
                 />
               </div>
-              <div className={styles.logOut}>Log Out</div>
+              <a className={styles.logOut}>Log Out</a>
             </div>
           </div>
         </div>

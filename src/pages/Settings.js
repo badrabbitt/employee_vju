@@ -9,12 +9,12 @@ const Settings = () => {
       <main className={styles.settings1}>
         <div className={styles.background} />
         <Sidebar />
-        <div className={styles.footer}>
+        <section className={styles.footer}>
           <div className={styles.footerContent}>
             <MenuChangePassword />
             <MenuInfor />
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );

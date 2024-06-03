@@ -10,6 +10,7 @@
   flex-shrink: 0;
 }
 .dashboard {
+  text-decoration: none;
   font-size: 18px;
   font-family: Poppins;
   color: #7a7e86;
@@ -50,6 +51,7 @@
   padding: 1px 0 0;
 }
 .classes {
+  text-decoration: none;
   position: relative;
   font-size: 18px;
   font-family: Poppins;
@@ -119,6 +121,7 @@
   padding: 1px 1px 0 0;
 }
 .schedule {
+  text-decoration: none;
   position: relative;
   font-size: 18px;
   font-family: Poppins;

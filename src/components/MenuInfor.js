@@ -20,12 +20,7 @@ const MenuInfor = ({ className = "" }) => {
         </div>
       </div>
       <div className={styles.backwardWrapper}>
-        <img
-          className={styles.backwardIcon}
-          loading="lazy"
-          alt=""
-          src="/backward-1@2x.png"
-        />
+        <img className={styles.backwardIcon} alt="" src="/backward-1@2x.png" />
       </div>
     </button>
   );

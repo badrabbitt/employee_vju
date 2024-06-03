@@ -12,7 +12,7 @@ const FrameComponent = ({ className = "" }) => {
             alt=""
             src="/grid.svg"
           />
-          <div className={styles.dashboard}>Dashboard</div>
+          <a className={styles.dashboard}>Dashboard</a>
         </button>
       </div>
       <div className={styles.frameContainer}>
@@ -25,7 +25,7 @@ const FrameComponent = ({ className = "" }) => {
               src="/archive.svg"
             />
           </div>
-          <div className={styles.classes}>Classes</div>
+          <a className={styles.classes}>Classes</a>
         </button>
       </div>
       <button className={styles.peopleParent} id="button_schedule">
@@ -47,7 +47,7 @@ const FrameComponent = ({ className = "" }) => {
               src="/calendar2week.svg"
             />
           </div>
-          <div className={styles.schedule}>Schedule</div>
+          <a className={styles.schedule}>Schedule</a>
         </button>
       </div>
     </div>
