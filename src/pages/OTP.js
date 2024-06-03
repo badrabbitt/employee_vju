@@ -26,33 +26,13 @@ const OTP = () => {
                       <input
                         className={styles.otp11}
                         name="OTP_1"
-                        type="number"
+                        type="text"
                       />
-                      <input
-                        className={styles.otp2}
-                        name="OTP_2"
-                        type="number"
-                      />
-                      <input
-                        className={styles.otp3}
-                        name="OTP_3"
-                        type="number"
-                      />
-                      <input
-                        className={styles.otp4}
-                        name="OTP_4"
-                        type="number"
-                      />
-                      <input
-                        className={styles.otp5}
-                        name="OTP_5"
-                        type="number"
-                      />
-                      <input
-                        className={styles.otp6}
-                        name="OTP_6"
-                        type="number"
-                      />
+                      <input className={styles.otp2} name="OTP_2" type="text" />
+                      <input className={styles.otp3} name="OTP_3" type="text" />
+                      <input className={styles.otp4} name="OTP_4" type="text" />
+                      <input className={styles.otp5} name="OTP_5" type="text" />
+                      <input className={styles.otp6} name="OTP_6" type="text" />
                     </div>
                     <div className={styles.resent}>
                       <button className={styles.resentOtp}>Resent OTP</button>
