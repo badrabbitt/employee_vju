@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Login from "./pages/Login";
+import Infomation from "./pages/Infomation";
 import ForgotPassword from "./pages/ForgotPassword";
 import OTP from "./pages/OTP";
 import Settings from "./pages/Settings";
@@ -27,6 +28,10 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/infomation":
         title = "";
         metaDescription = "";
         break;
@@ -61,6 +66,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
+      <Route path="/infomation" element={<Infomation />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/otp" element={<OTP />} />
       <Route path="/settings" element={<Settings />} />

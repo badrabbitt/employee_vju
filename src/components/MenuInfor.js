@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./MenuInfor.module.css";
+import styles from "./MenuInfor1.module.css";
 
 const MenuInfor = ({ className = "" }) => {
   return (
