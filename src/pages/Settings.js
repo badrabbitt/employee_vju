@@ -1,6 +1,6 @@
 import Sidebar from "../components/Sidebar";
 import MenuChangePassword from "../components/MenuChangePassword";
-import MenuInfor from "../components/MenuInfor";
+import MenuInfor from "../components/MenuInfor1";
 import styles from "./Settings.module.css";
 
 const Settings = () => {
