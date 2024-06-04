@@ -4,8 +4,8 @@ import styles from "./Content.module.css";
 const Content = ({ className = "" }) => {
   return (
     <div className={[styles.content, className].join(" ")}>
-      <button className={styles.contentHeader} id="button_dashboard">
-        <div className={styles.contentHeaderInner}>
+      <div className={styles.pageTitle}>
+        <div className={styles.title}>
           <img
             className={styles.gridIcon}
             loading="lazy"
@@ -14,96 +14,97 @@ const Content = ({ className = "" }) => {
           />
           <div className={styles.dashboard}>Dashboard</div>
         </div>
-      </button>
-      <button className={styles.contentHeader1} id="button_classes">
-        <div className={styles.frameParent}>
-          <div className={styles.archiveWrapper}>
-            <img
-              className={styles.archiveIcon}
-              loading="lazy"
-              alt=""
-              src="/archive.svg"
-            />
-          </div>
-          <div className={styles.classes}>Classes</div>
-        </div>
-      </button>
-      <button className={styles.contentHeader2} id="button_user_management">
-        <img
-          className={styles.peopleIcon}
-          loading="lazy"
-          alt=""
-          src="/people.svg"
-        />
-        <div className={styles.userManagement}>User Management</div>
-      </button>
-      <div className={styles.contentHeader3}>
-        <button className={styles.frameGroup} id="button_schedule">
-          <div className={styles.calendar2weekWrapper}>
-            <img
-              className={styles.calendar2weekIcon}
-              loading="lazy"
-              alt=""
-              src="/calendar2week.svg"
-            />
-          </div>
-          <div className={styles.schedule}>Schedule</div>
-        </button>
       </div>
-      <div className={styles.contentHeader4}>
-        <button className={styles.frameContainer} id="button_grades">
-          <div className={styles.vectorWrapper}>
+      <div className={styles.links}>
+        <div className={styles.linkPairsWrapper}>
+          <div className={styles.linkPairs}>
+            <div className={styles.linkIcons}>
+              <img
+                className={styles.archiveIcon}
+                loading="lazy"
+                alt=""
+                src="/archive.svg"
+              />
+            </div>
+            <div className={styles.classes}>Classes</div>
+          </div>
+        </div>
+        <button className={styles.userManagement} id="button_user_management">
+          <div className={styles.userManagementChild} />
+          <img className={styles.peopleIcon} alt="" src="/people1.svg" />
+          <div className={styles.userManagement1}>User Management</div>
+        </button>
+        <div className={styles.linksInner}>
+          <div className={styles.frameParent}>
+            <div className={styles.calendar2weekWrapper}>
+              <img
+                className={styles.calendar2weekIcon}
+                loading="lazy"
+                alt=""
+                src="/calendar2week.svg"
+              />
+            </div>
+            <div className={styles.schedule}>Schedule</div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.actions}>
+        <div className={styles.actionIcons}>
+          <div className={styles.actionIconsPrimary}>
             <img
-              className={styles.vectorIcon}
+              className={styles.actionIcons1}
               loading="lazy"
               alt=""
               src="/vector.svg"
             />
           </div>
           <div className={styles.grades}>Grades</div>
-        </button>
-      </div>
-      <div className={styles.contentFooter}>
-        <div className={styles.contentFooterInner}>
-          <div className={styles.footerActions}>
-            <button className={styles.downloadIconParent} id="button_downloads">
-              <div className={styles.downloadIcon}>
-                <img
-                  className={styles.cloudarrowdownIcon}
-                  loading="lazy"
-                  alt=""
-                  src="/cloudarrowdown.svg"
-                />
-              </div>
-              <div className={styles.downloads}>Downloads</div>
-            </button>
-          </div>
-          <div className={styles.settingsParent}>
-            <button className={styles.settings}>
-              <div className={styles.settingsChild} />
-              <div className={styles.gearWrapper}>
-                <img className={styles.gearIcon} alt="" src="/gear.svg" />
-              </div>
-              <div className={styles.settings1}>Settings</div>
-            </button>
-            <div className={styles.frameWrapper}>
-              <button className={styles.frameButton} id="button_trash">
-                <div className={styles.trashWrapper}>
-                  <img
-                    className={styles.trashIcon}
-                    loading="lazy"
-                    alt=""
-                    src="/trash.svg"
-                  />
-                </div>
-                <div className={styles.trash}>Trash</div>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
-      <div className={styles.contentHeader5}>
-        <button className={styles.frameParent1} id="button_logout">
+      <div className={styles.downloadsIconWrapper}>
+        <div className={styles.downloadsIcon}>
+          <div className={styles.downloadsIconContainerWrapper}>
+            <div className={styles.downloadsIconContainer}>
+              <img
+                className={styles.vectorIcon}
+                loading="lazy"
+                alt=""
+                src="/vector-1.svg"
+              />
+              <img className={styles.vectorIcon1} alt="" src="/vector-2.svg" />
+            </div>
+          </div>
+          <div className={styles.downloads}>Downloads</div>
+        </div>
+      </div>
+      <div className={styles.actions1}>
+        <div className={styles.frameGroup}>
+          <div className={styles.gearWrapper}>
+            <img
+              className={styles.gearIcon}
+              loading="lazy"
+              alt=""
+              src="/gear1.svg"
+            />
+          </div>
+          <div className={styles.settings}>Settings</div>
+        </div>
+      </div>
+      <div className={styles.actions2}>
+        <div className={styles.frameContainer}>
+          <div className={styles.trashWrapper}>
+            <img
+              className={styles.trashIcon}
+              loading="lazy"
+              alt=""
+              src="/trash.svg"
+            />
+          </div>
+          <div className={styles.trash}>Trash</div>
+        </div>
+      </div>
+      <div className={styles.actions3}>
+        <button className={styles.frameButton} id="button_logout">
           <div className={styles.boxarrowrightWrapper}>
             <img
               className={styles.boxarrowrightIcon}
