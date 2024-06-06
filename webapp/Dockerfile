@@ -1,5 +1,9 @@
 FROM tomcat:jre21
+<<<<<<< HEAD
 ADD https://github.com/Trungnef/warfile/releases/download/v1.0.0/ess.war /tmp/ess.war
+=======
+ADD https://github.com/SirChri/employee-shift-scheduler/releases/latest/download/ess-v0.9.2.war /tmp/ess.war
+>>>>>>> 5bb81de5d0ec7922ff69952aec2deee8475cbb1e
 RUN apt-get update && apt-get install unzip
 RUN unzip /tmp/ess.war -d /usr/local/tomcat/webapps/ess
 
